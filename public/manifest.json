@@ -1,0 +1,9 @@
+{
+    "icons":[
+        {
+            "src": "Favicon.ico",
+            "sizes": "48x48px, 96x96px, 144x144px, 64x64px, 32x32px, 24x24px, 16x16px",
+            "type": "image/x-icon"
+        }
+    ]
+}
