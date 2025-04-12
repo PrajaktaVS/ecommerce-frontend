@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./Productspage.css";
+import "./ProductsPage.css";
 import { SearchBar } from "./SearchBar";
 import { useAuth } from "../store/auth";
 import { FaPlus, FaMinus } from "react-icons/fa";
