@@ -40,6 +40,12 @@ src/
 │── main.jsx
 │── index.css
 
+### Data Handling
+
+- **User Authentication**: Only **Register** and **Login** information (like username, email, and password) is securely stored in the MongoDB database.
+- **Cart Functionality**: All cart operations (adding/removing items, viewing cart) are handled using **localStorage**. Cart data is stored locally on the user's browser and is **not saved to the backend**.
+
+
 ##  Installation
 
 ### 1. Clone the repository
