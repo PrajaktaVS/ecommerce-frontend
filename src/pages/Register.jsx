@@ -19,7 +19,6 @@ export const Register = () => {
 
     //handling the input values
     const handleInput = (e) => {
-        console.log(e);
         let name = e.target.name;
         let value = e.target.value;
 
@@ -42,9 +41,7 @@ export const Register = () => {
             });
 
             if (response.ok) {
-                const res_data = await response.json();
                 //store token in local storage
-                // storeTokenInLS(res_data.token);
                 setUser({ username: "", email: "", password: "" });
                 toast.success("Registration successful. Please login.");
                 navigate("/login");
