@@ -6,7 +6,7 @@ export const AuthProvider = ({ children }) => {
     const [token, setToken] = useState(localStorage.getItem("token"));
     const [user, setUser] = useState("");
 
-    const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+    const URL = import.meta.env.VITE_API_BASE_URL;
 
     const storeTokenInLS = (serverToken) => {
         localStorage.setItem("token", serverToken);
@@ -25,7 +25,7 @@ const LogoutUser = () => {
  //jwt authentication - to get currently login user data
 const userAuthentication = async() => {
     try {
-        const response = await fetch(`${API_BASE_URL}/auth/user`, {
+        const response = await fetch(`${URL}/auth/user`, {
             method: "GET",
             headers: {
                 Authorization: `Bearer ${token}`
