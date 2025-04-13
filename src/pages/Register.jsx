@@ -5,7 +5,7 @@ import { AuthLayout } from "../components/AuthLayout";
 import { toast } from "react-toastify";
 
 
-const URL = "http://localhost:5000/api/auth/register";
+const URL = `${import.meta.env.VITE_API_BASE_URL}/auth/register`;
 
 export const Register = () => {
     const [user, setUser] = useState({
