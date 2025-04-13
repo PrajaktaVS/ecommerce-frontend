@@ -44,7 +44,7 @@ export const Register = () => {
             if (response.ok) {
                 const res_data = await response.json();
                 //store token in local storage
-                storeTokenInLS(res_data.token);
+                // storeTokenInLS(res_data.token);
                 setUser({ username: "", email: "", password: "" });
                 toast.success("Registration successful. Please login.");
                 navigate("/login");
