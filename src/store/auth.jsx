@@ -45,6 +45,8 @@ const userAuthentication = async() => {
  useEffect(() => {
     if(token){
         userAuthentication();
+    }else{
+        setUser("");
     }
  }, [token]);
 
