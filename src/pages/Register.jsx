@@ -40,11 +40,15 @@ export const Register = () => {
                 body: JSON.stringify(user),
             });
 
+            const resData = await response.json();
+
             if (response.ok) {
                 //store token in local storage
                 setUser({ username: "", email: "", password: "" });
                 toast.success("Registration successful. Please login.");
                 navigate("/login");
+            }else {
+                toast.error(resData.message || "Registration failed.")
             }
         } catch (error) {
             toast.error("Registration failed. Please try again.");
